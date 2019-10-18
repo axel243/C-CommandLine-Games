@@ -5,8 +5,6 @@ namespace Ganzenbord
 {
     class Program
     {
-       
-        
         private static void Main(string[] args)
         {
             StartSpel();
@@ -26,7 +24,7 @@ namespace Ganzenbord
             {
                 Spelen.Speel();
             }
-          
         }
     }
     }
+    

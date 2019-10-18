@@ -7,16 +7,14 @@ namespace Ganzenbord
         private int position;
         public bool Staat { get; set ; }
         private int end = 63;
-        public int waardeDobbelsteen;
+        Dobbelsteen dobbelsteen = new Dobbelsteen();
         public Spelbord()
         {
         }
         
         
-        public int SpelbordVakken(int waardeDobbelsteen)
+        public int SpelbordVakken(int position)
         {
-            position += waardeDobbelsteen;
-            Console.WriteLine("Je staat op vakje: " + position);
             switch (position)
             {
                 case 6:
@@ -50,7 +48,7 @@ namespace Ganzenbord
                     position = 0;
                     break;
                 case 10: case 20: case 30: case 40: case 50: case 60:
-                    position += waardeDobbelsteen;
+                    position += dobbelsteen.gooiDobbelsteen();
                     break;
             }
             if (position > 63) {

@@ -34,7 +34,7 @@ namespace Ganzenbord
                     nummer += 6;
                     break;
             }
-            Console.WriteLine("Je hebt " + nummer + " gegooid!");
+            Console.WriteLine("\n Je hebt " + nummer + " gegooid!");
             return nummer;
         }
     }
