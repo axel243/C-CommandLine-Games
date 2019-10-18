@@ -16,7 +16,6 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="ProgramOOP.cs" t="Include" />
         <e p="Spelbord.cs" t="Include" />
         <e p="Spelen.cs" t="Include" />
         <e p="Speler.cs" t="Include" />
