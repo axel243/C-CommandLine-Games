@@ -8,12 +8,15 @@ namespace Ganzenbord
     {
         public String naam { get; set; }
         public int position { get; set; }
+        public bool doetMee { get; set; }
+        public bool beurtOverslaan { get; set; }
 
-        public Speler(String naam, int position)
+        public Speler(String naam, int position, bool doetMee, bool beurtOverslaan)
         {
             this.naam = naam;
             this.position = position;
-           
+            this.doetMee = doetMee;
+            this.beurtOverslaan = beurtOverslaan;
         }
 
     }
