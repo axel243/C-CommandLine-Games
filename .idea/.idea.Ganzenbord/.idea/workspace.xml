@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a504da3-3c86-42a5-aab2-6514cde4da38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/Kaart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Kaart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/KaartenSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/KaartenSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/Spelen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Spelen.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,9 +43,9 @@
         <option value="$PROJECT_DIR$/BlackJack/Deck.cs" />
         <option value="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Speler.cs" />
-        <option value="$PROJECT_DIR$/BlackJack/Spelen.cs" />
         <option value="$PROJECT_DIR$/BlackJack/KaartenSet.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Kaart.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Spelen.cs" />
       </list>
     </option>
   </component>
@@ -149,7 +144,7 @@
       <workItem from="1571558453709" duration="9223000" />
       <workItem from="1571610800848" duration="1924000" />
       <workItem from="1571668959484" duration="2824000" />
-      <workItem from="1571727493108" duration="46377000" />
+      <workItem from="1571727493108" duration="49615000" />
     </task>
     <servers />
   </component>

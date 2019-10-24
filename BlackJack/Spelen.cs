@@ -33,7 +33,7 @@ namespace BlackJack
 
             spelerLijst.Add(dealer);
             actieDealer(dealer);
-            ResultGame();
+            ResultGame(dealer);
         }
 
         static void Actie(Speler speler)
@@ -57,7 +57,7 @@ namespace BlackJack
             }
         }
 
-        static void actieDealer(Speler speler)
+        static Speler actieDealer(Speler speler)
         {
             Console.WriteLine(speler.WaardeHand);
             while (spelerLijst.Any(s => s.IsDealer == true))
@@ -72,6 +72,7 @@ namespace BlackJack
                 speler.WaardeHand = speler.finalHand(speler.Hand);
                 speler.PrintValues(speler.Hand);
             }
+            return speler;
         }
 
         static void StartingHand()
@@ -93,27 +94,14 @@ namespace BlackJack
             return speler;
         }
 
-        static void ResultGame()
-        {
-            List<int> scores = new List<int>();
-            foreach (Speler speler in spelerLijst)
-            {
+        static void ResultGame(Speler dealer) {
+            foreach (Speler speler in spelerLijst) {
                 speler.WaardeHand = speler.finalHand(speler.Hand);
-                if (speler.WaardeHand < 22)
-                {
-                    scores.Add(speler.WaardeHand);
-                }
-
                 Console.WriteLine(speler.Naam + " " + speler.WaardeHand);
-            }
-
-            int finalScore = scores.Max();
-            foreach (Speler speler in spelerLijst)
-            {
-                if (finalScore == speler.WaardeHand)
-                {
-                    Console.WriteLine("\n" + speler.Naam + " wint!" + speler.WaardeHand);
-                    break;
+                if (speler.WaardeHand < 22) {
+                    if (dealer.WaardeHand < speler.WaardeHand) {
+                        Console.WriteLine(speler.Naam + "wint van de dealer! " + speler.WaardeHand);
+                    }
                 }
             }
         }
