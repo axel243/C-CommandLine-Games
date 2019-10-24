@@ -11,13 +11,17 @@ namespace BlackJack
         private static List<Speler> spelerLijst = new List<Speler>();
         private static Stack<Kaart> deck = new Stack<Kaart>();
         private static Deck kaartendeck = new Deck(new KaartenSet(deck));
+
         public static void Spel()
         {
+            Speler dealer = spelers.addDealer();
             spelers.aantalSpelers(spelerLijst);
             kaartendeck.HoeveelheidSetjes();
             kaartendeck.Shuffle();
             StartingHand();
-            while (spelerLijst.Any(s => s.DoetMee == true)){
+            DealerHand(dealer);
+            while (spelerLijst.Any(s => s.DoetMee == true))
+            {
                 foreach (Speler speler in spelerLijst)
                 {
                     if (speler.DoetMee == true)
@@ -26,23 +30,47 @@ namespace BlackJack
                     }
                 }
             }
+
+            spelerLijst.Add(dealer);
+            actieDealer(dealer);
             ResultGame();
         }
 
-         static void Actie(Speler speler)
+        static void Actie(Speler speler)
         {
-            Console.WriteLine(speler.Naam + " Kies uw actie: \n" + "K voor kaart vragen \n" + "Q voor het stoppen \n" );
-            var invoer = Console.ReadKey();
-            if (invoer.Key == ConsoleKey.K)
+            if (speler.IsDealer == false)
             {
-                speler.AddToHand(deck.Pop());
-                Console.WriteLine(speler.Naam + " pakt een kaart");
-                speler.PrintValues(speler.Hand);
+                Console.WriteLine(speler.Naam + " Kies uw actie: \n" + "K voor kaart vragen \n" +
+                                  "Q voor het stoppen \n");
+                var invoer = Console.ReadKey();
+                if (invoer.Key == ConsoleKey.K)
+                {
+                    speler.AddToHand(deck.Pop());
+                    Console.WriteLine(speler.Naam + " pakt een kaart");
+                    speler.PrintValues(speler.Hand);
+                }
+                else if (invoer.Key == ConsoleKey.Q)
+                {
+                    Console.WriteLine(speler.Naam + " stand! ");
+                    speler.DoetMee = false;
+                }
             }
-            else if (invoer.Key == ConsoleKey.Q)
+        }
+
+        static void actieDealer(Speler speler)
+        {
+            Console.WriteLine(speler.WaardeHand);
+            while (spelerLijst.Any(s => s.IsDealer == true))
             {
-                Console.WriteLine(speler.Naam + " stand! ");
-                speler.DoetMee = false;
+                if (speler.WaardeHand > 15)
+                {
+                    speler.DoetMee = false;
+                    break;
+                }
+
+                speler.AddToHand(deck.Pop());
+                speler.WaardeHand = speler.finalHand(speler.Hand);
+                speler.PrintValues(speler.Hand);
             }
         }
 
@@ -54,6 +82,15 @@ namespace BlackJack
                 speler.AddToHand(deck.Pop());
                 speler.PrintValues(speler.Hand);
             }
+        }
+
+        static Speler DealerHand(Speler speler)
+        {
+            speler.AddToHand(deck.Pop());
+            speler.PrintValues(speler.Hand);
+            speler.AddToHand(deck.Pop());
+            speler.WaardeHand = speler.finalHand(speler.Hand);
+            return speler;
         }
 
         static void ResultGame()

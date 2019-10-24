@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a504da3-3c86-42a5-aab2-6514cde4da38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/Deck.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/Kaart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/KaartenSet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/Spelen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJack/Speler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/Spelen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Spelen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/Speler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Speler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/bin/Debug/netcoreapp2.2/Ganzenbord.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/bin/Debug/netcoreapp2.2/Ganzenbord.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/bin/Debug/netcoreapp2.2/Ganzenbord.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/bin/Debug/netcoreapp2.2/Ganzenbord.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/obj/Debug/netcoreapp2.2/Ganzenbord.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/obj/Debug/netcoreapp2.2/Ganzenbord.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ganzenbord/obj/Debug/netcoreapp2.2/Ganzenbord.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/obj/Debug/netcoreapp2.2/Ganzenbord.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Deck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/Spelen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Spelen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/Speler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Speler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/bin/Debug/netcoreapp2.2/BlackJack.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/obj/Debug/netcoreapp2.2/BlackJack.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,12 +46,12 @@
         <option value="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Kaarten.cs" />
         <option value="$PROJECT_DIR$/Ganzenbord/Spelen.cs" />
-        <option value="$PROJECT_DIR$/BlackJack/Deck.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Program.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Kaart.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/KaartenSet.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Deck.cs" />
         <option value="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Speler.cs" />
-        <option value="$PROJECT_DIR$/BlackJack/KaartenSet.cs" />
         <option value="$PROJECT_DIR$/BlackJack/Spelen.cs" />
       </list>
     </option>
@@ -159,7 +151,7 @@
       <workItem from="1571558453709" duration="9223000" />
       <workItem from="1571610800848" duration="1924000" />
       <workItem from="1571668959484" duration="2824000" />
-      <workItem from="1571727493108" duration="41095000" />
+      <workItem from="1571727493108" duration="45448000" />
     </task>
     <servers />
   </component>

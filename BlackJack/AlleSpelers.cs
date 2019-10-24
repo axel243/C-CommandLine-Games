@@ -21,7 +21,7 @@ namespace BlackJack
             {
                 Console.WriteLine("Voer de naam van de speler " + i);
                 String naam = Console.ReadLine();
-                Speler speler = new Speler(naam, true, 0);
+                Speler speler = new Speler(naam, true, false, 0);
                 spelers.Add(speler);
             }
 
@@ -30,6 +30,12 @@ namespace BlackJack
             {
                 Console.WriteLine(speler.Naam);
             }
+        }
+
+        public Speler addDealer()
+        {
+            Speler speler = new Speler("Dealer", true, true, 0);
+            return speler;
         }
         
         }

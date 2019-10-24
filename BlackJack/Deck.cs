@@ -35,13 +35,13 @@ namespace BlackJack
             var values = setKaarten.ToArray();
             Random rnd = new Random();
             setKaarten.Clear();
-            foreach (var value in values.OrderBy(x => rnd.Next()))
-                setKaarten.Push(value);
+            foreach (var value in values.OrderBy(x => rnd.Next())) setKaarten.Push(value);
         }
-        
-        public void PrintValues( Stack<Kaart> kaartenset )  {
-            foreach ( Kaart kaart in kaartenset )
-                Console.WriteLine( "   {0}", kaart.Kleur + " " + kaart.TypeKaart + " " + kaart.Waarde);
+
+        public void PrintValues(Stack<Kaart> kaartenset)
+        {
+            foreach (Kaart kaart in kaartenset)
+                Console.WriteLine("   {0}", kaart.Kleur + " " + kaart.TypeKaart + " " + kaart.Waarde);
             Console.WriteLine();
         }
     }

@@ -8,20 +8,24 @@ namespace BlackJack
         public string Naam { get; }
         public List<Kaart> Hand { get; }
         public bool DoetMee { get; set; }
+        public bool IsDealer { get; }
         public int WaardeHand { get; set; }
 
-        public Speler(String naam, bool doetMee, int waardeHand)
+        public Speler(String naam, bool doetMee, bool isDealer, int waardeHand)
         {
             Naam = naam;
             Hand = new List<Kaart>();
             DoetMee = doetMee;
+            IsDealer = isDealer;
             WaardeHand = waardeHand;
         }
 
         public void PrintValues( List<Kaart> hand )  {
-            foreach ( Kaart kaart in hand )
-                Console.WriteLine( Naam + " heeft "+  kaart.Kleur + " " + kaart.TypeKaart + " " + kaart.Waarde);
-            Console.WriteLine();
+            foreach (Kaart kaart in hand)
+            {
+                Console.WriteLine(Naam + " heeft " + kaart.Kleur + " " + kaart.TypeKaart + " " + kaart.Waarde);
+            }
+            Console.WriteLine("\n");
         }
 
         public void AddToHand(Kaart kaart) {
