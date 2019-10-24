@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a504da3-3c86-42a5-aab2-6514cde4da38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/Deck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/Kaart.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/KaartenSet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/Spelen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJack/Speler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ganzenbord/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ganzenbord.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ganzenbord/Spelen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Spelen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ganzenbord/Speler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ganzenbord/Speler.cs" afterDir="false" />
@@ -21,11 +30,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BlackJack/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ganzenbord/Dobbelsteen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/Kaart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ganzenbord/Spelbord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ganzenbord/Speler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ganzenbord/Spelen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/KaartenSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ganzenbord/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/Speler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/AlleSpelers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlackJack/Spelen.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,9 +50,17 @@
         <option value="$PROJECT_DIR$/Ganzenbord/ProgramOOP.cs" />
         <option value="$PROJECT_DIR$/Ganzenbord/Program.cs" />
         <option value="$PROJECT_DIR$/Ganzenbord/Dobbelsteen.cs" />
-        <option value="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" />
         <option value="$PROJECT_DIR$/Ganzenbord/Speler.cs" />
+        <option value="$PROJECT_DIR$/Ganzenbord/Spelbord.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Kaarten.cs" />
         <option value="$PROJECT_DIR$/Ganzenbord/Spelen.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Deck.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Program.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Kaart.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/AlleSpelers.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Speler.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/KaartenSet.cs" />
+        <option value="$PROJECT_DIR$/BlackJack/Spelen.cs" />
       </list>
     </option>
   </component>
@@ -59,7 +83,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager" selected=".NET Project.BlackJack">
+    <configuration name="BlackJack" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/BlackJack/BlackJack.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Ganzenbord/bin/Debug/netcoreapp2.2/Ganzenbord.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -98,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.BlackJack" />
         <item itemvalue=".NET Project.Ganzenbord" />
       </list>
     </recent_temporary>
@@ -114,7 +157,9 @@
       <updated>1571305744961</updated>
       <workItem from="1571305746246" duration="35608000" />
       <workItem from="1571558453709" duration="9223000" />
-      <workItem from="1571610800848" duration="1815000" />
+      <workItem from="1571610800848" duration="1924000" />
+      <workItem from="1571668959484" duration="2824000" />
+      <workItem from="1571727493108" duration="41095000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Ganzenbord
 {
@@ -8,15 +10,16 @@ namespace Ganzenbord
         public bool Staat { get; set ; }
         private int end = 63;
         Dobbelsteen dobbelsteen = new Dobbelsteen();
+        private Speler speler;
+
         public Spelbord()
         {
         }
         
         
-        public int SpelbordVakken(int position, int dobbelsteenwaarde)
+        public void SpelbordVakken(int position, int dobbelsteenwaarde, ArrayList spelers)
         {
-            switch (position)
-            {
+            switch (position) {
                 case 6:
                     Console.WriteLine("Een brug! Deze brug brengt de speler naar vakje 12");
                     position = 12;
@@ -41,15 +44,32 @@ namespace Ganzenbord
                     Console.WriteLine("Op een decimaal vakje! ga nog eens " + dobbelsteenwaarde + " stappen vooruit!");
                     position += dobbelsteenwaarde;
                     break;
-            
+                case int n when (n > 63):
+                    int stappenTerug = position - end;
+                    position = end - stappenTerug;
+                    Console.WriteLine("Je gooit teveel!! je moet " + stappenTerug + " van " + end);
+                    break;
+                case 19:
+                    Console.WriteLine("De speler zit vast op de herberg! Beurt overslaan");
+                    speler.beurtOverslaan = true;
+                    break;
+                case 31:
+                    Console.WriteLine("De put! Wacht tot een medespeler je voorbij komt om je op te halen");
+                    foreach (Speler speler in spelers)
+                    {
+                        if (speler.put)
+                        {
+                            speler.put = false;
+                            Console.WriteLine(speler.naam + " is uit de put!");
+                        }
+                    }
+                    speler.put = true;
+                    break;
+                case 23:
+                    Console.WriteLine("Gevangen!!! De speler is af!");
+                    speler.doetMee = false;
+                    break;
             }
-            if (position > 63) {
-                int stappenTerug = position - end;
-                position = end - stappenTerug;
-                Console.WriteLine("Je gooit teveel!! je moet " + stappenTerug + " van " + end);
-            }
-
-            return position;
         }
     }
 }

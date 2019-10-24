@@ -1,9 +1,27 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Axel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Axel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Ganzenbord.-469981149.00" t="ExcludeRecursive" />
     <e p="C:\Users\Axel\RiderProjects\Ganzenbord" t="IncludeFlat">
+      <e p="BlackJack" t="IncludeRecursive">
+        <e p="AlleSpelers.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BlackJack.csproj" t="IncludeRecursive" />
+        <e p="Deck.cs" t="Include" />
+        <e p="Kaart.cs" t="Include" />
+        <e p="KaartenSet.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="BlackJack.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Spelen.cs" t="Include" />
+        <e p="Speler.cs" t="Include" />
+      </e>
       <e p="Ganzenbord" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dobbelsteen.cs" t="Include" />

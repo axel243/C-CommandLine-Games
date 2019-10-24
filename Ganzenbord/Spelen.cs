@@ -7,7 +7,6 @@ namespace Ganzenbord
     {
         static Dobbelsteen dobbelsteen = new Dobbelsteen();
         static Spelbord spelbord = new Spelbord();
-        static Speler speler = new Speler("", 0, true, false);
         static ArrayList spelers = new ArrayList();
         
         public static void Speel()
@@ -16,20 +15,27 @@ namespace Ganzenbord
             addSpeler();
             while (spelbord.Staat == true) {
                 foreach (Speler speler in spelers) {
-                    Console.WriteLine("\n" + speler.naam + " Toets g in om de dobbelsteen te gooien");
-                        var throwDice = Console.ReadKey();
-                        if (throwDice.Key != ConsoleKey.G)
+                    if (speler.doetMee ) {
+                        if (speler.beurtOverslaan == true || speler.put == true)
                         {
-                            spelbord.Staat = false;
+                            Console.WriteLine(speler.naam + " moet een beurt overslaan");
+                            speler.beurtOverslaan = false;
                         }
-                        else
-                        {
-                            int dobbelsteenWaarde = dobbelsteen.gooiDobbelsteen();
-                            speler.position += dobbelsteenWaarde;
-                            speler.position = spelbord.SpelbordVakken(speler.position, dobbelsteenWaarde);
-                            SpelbordVakkenTwee(speler.position);
-                            Console.WriteLine(speler.naam + " staat op vakje: " + speler.position);
+                        else {
+                            Console.WriteLine("\n" + speler.naam + " Toets g in om de dobbelsteen te gooien");
+                            var throwDice = Console.ReadKey();
+                            if (throwDice.Key != ConsoleKey.G)
+                            {
+                                spelbord.Staat = false;
+                            }
+                            else {
+                                int dobbelsteenWaarde = dobbelsteen.gooiDobbelsteen();
+                                speler.position += dobbelsteenWaarde;
+                                spelbord.SpelbordVakken(speler.position, dobbelsteenWaarde, spelers);
+                                Console.WriteLine(speler.naam + " staat op vakje: " + speler.position);
+                            }
                         }
+                    }
                 }
             }
         }
@@ -43,7 +49,7 @@ namespace Ganzenbord
             {
                 Console.WriteLine("Voer de naam van de speler " + i);
                 String naam = Console.ReadLine();
-                Speler speler = new Speler(naam, 0, true, false);
+                Speler speler = new Speler(naam, 0, true, false, false);
                 spelers.Add(speler);
             }
 
@@ -53,21 +59,6 @@ namespace Ganzenbord
                 Console.WriteLine(speler.naam);
             }
 
-        }
-
-        public static void SpelbordVakkenTwee(int position) {
-            switch (position)
-            {
-                case 19:
-                    Console.WriteLine("De speler zit vast op de herberg! Beurt overslaan");
-                    break;
-                case 31:
-                    Console.WriteLine("De put! Wacht tot een medespeler je voorbij komt om je op te halen");
-                    break;
-                case 23:
-                    Console.WriteLine("Gevangen!!! De speler is af!");
-                    break;
-            }
         }
     }
 }
